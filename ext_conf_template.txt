@@ -1,0 +1,4 @@
+
+# cat=basic/enable/50; type=boolean; label=Enable select instead of checkbox: If set, most of checkboxes will turn into selectboxes, so you can choose "from Typoscript"
+useSelectInsteadCheckbox = 0
+

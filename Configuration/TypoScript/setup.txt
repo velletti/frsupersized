@@ -1,0 +1,78 @@
+plugin.tx_frsupersized {
+	settings {
+		overrideFlexformSettingsIfEmpty = general.cssCoreFile, general.cssSlideshowFile, general.cssThemeFile, general.jQueryFile, general.jQueryEasingFile, general.supersizedCoreFile, general.supersizedSlideshowFile, general.themeFile, fullbackground.minWidth, fullbackground.minHeight, slideshow.navigationImagePath, slideshow.slideInterval, slideshow.startSlide, slideshow.transitionSpeed, slideshow.thumbWidth, slideshow.thumbHeight, banner.bannerWidth, banner.bannerHeight, banner.bannerTop, banner.bannerLeft
+		overrideFlexformSettingsFromTS = general.jQueryDisable, fullbackground.verticalCenter, fullbackground.horizontalCenter, fullbackground.fitAlways, fullbackground.fitPortrait, fullbackground.fitLandscape, slideshow.slideshow, slideshow.autoplay, slideshow.stopLoop, slideshow.random, slideshow.transition, slideshow.newWindow, slideshow.performance, slideshow.keyboardNav, slideshow.imageProtect, slideshow.slideLinks, slideshow.thumbLinks, slideshow.thumbWidthCrop, slideshow.thumbHeightCrop, slideshow.thumbnailNavigation, slideshow.pauseHover, slideshow.themeShutterProgressBar, slideshow.themeShutterMouseScrub, banner.banner
+		general {
+			cssCoreFile = {$plugin.tx_frsupersized.settings.general.cssCoreFile}
+			cssSlideshowFile = {$plugin.tx_frsupersized.settings.general.cssSlideshowFile}
+			cssThemeFile = {$plugin.tx_frsupersized.settings.general.cssThemeFile}
+			jQueryDisable = {$plugin.tx_frsupersized.settings.general.jQueryDisable}
+			jQueryFile = {$plugin.tx_frsupersized.settings.general.jQueryFile}
+			jQueryEasingFile = {$plugin.tx_frsupersized.settings.general.jQueryEasingFile}
+			supersizedCoreFile = {$plugin.tx_frsupersized.settings.general.supersizedCoreFile}
+			supersizedSlideshowFile = {$plugin.tx_frsupersized.settings.general.supersizedSlideshowFile}
+			themeFile = {$plugin.tx_frsupersized.settings.general.themeFile}
+		}
+		fullbackground {
+			minWidth = {$plugin.tx_frsupersized.settings.fullbackground.minWidth}
+			minHeight = {$plugin.tx_frsupersized.settings.fullbackground.minHeight}
+			verticalCenter = {$plugin.tx_frsupersized.settings.fullbackground.verticalCenter}
+			horizontalCenter = {$plugin.tx_frsupersized.settings.fullbackground.horizontalCenter}
+			fitAlways = {$plugin.tx_frsupersized.settings.fullbackground.fitAlways}
+			fitPortrait = {$plugin.tx_frsupersized.settings.fullbackground.fitPortrait}
+			fitLandscape = {$plugin.tx_frsupersized.settings.fullbackground.fitLandscape}
+		}
+		slideshow {
+			navigationImagePath = {$plugin.tx_frsupersized.settings.slideshow.navigationImagePath}
+			slideshow = {$plugin.tx_frsupersized.settings.slideshow.slideshow}
+			autoplay = {$plugin.tx_frsupersized.settings.slideshow.autoplay}
+			slideInterval = {$plugin.tx_frsupersized.settings.slideshow.slideInterval}
+			startSlide = {$plugin.tx_frsupersized.settings.slideshow.startSlide}
+			stopLoop = {$plugin.tx_frsupersized.settings.slideshow.stopLoop}
+			random = {$plugin.tx_frsupersized.settings.slideshow.random}
+			transition = {$plugin.tx_frsupersized.settings.slideshow.transition}
+			transitionSpeed = {$plugin.tx_frsupersized.settings.slideshow.transitionSpeed}
+			newWindow = {$plugin.tx_frsupersized.settings.slideshow.newWindow}
+			keyboardNav = {$plugin.tx_frsupersized.settings.slideshow.keyboardNav}
+			performance = {$plugin.tx_frsupersized.settings.slideshow.performance}
+			imageProtect = {$plugin.tx_frsupersized.settings.slideshow.imageProtect}
+			minWidth = {$plugin.tx_frsupersized.settings.slideshow.minWidth}
+			minHeight = {$plugin.tx_frsupersized.settings.slideshow.minHeight}
+			verticalCenter = {$plugin.tx_frsupersized.settings.slideshow.verticalCenter}
+			horizontalCenter = {$plugin.tx_frsupersized.settings.slideshow.horizontalCenter}
+			fitAlways = {$plugin.tx_frsupersized.settings.slideshow.fitAlways}
+			fitPortrait = {$plugin.tx_frsupersized.settings.slideshow.fitPortrait}
+			fitLandscape = {$plugin.tx_frsupersized.settings.slideshow.fitLandscape}
+			slideLinks = {$plugin.tx_frsupersized.settings.slideshow.slideLinks}
+			thumbLinks = {$plugin.tx_frsupersized.settings.slideshow.thumbLinks}
+			thumbWidth = {$plugin.tx_frsupersized.settings.slideshow.thumbWidth}
+			thumbWidthCrop = {$plugin.tx_frsupersized.settings.slideshow.thumbWidthCrop}
+			thumbHeight = {$plugin.tx_frsupersized.settings.slideshow.thumbHeight}
+			thumbHeightCrop = {$plugin.tx_frsupersized.settings.slideshow.thumbHeightCrop}
+			thumbnailNavigation = {$plugin.tx_frsupersized.settings.slideshow.thumbnailNavigation}
+			pauseHover = {$plugin.tx_frsupersized.settings.slideshow.pauseHover}
+			themeShutterProgressBar = {$plugin.tx_frsupersized.settings.slideshow.themeShutterProgressBar}
+			themeShutterMouseScrub = {$plugin.tx_frsupersized.settings.slideshow.themeShutterMouseScrub}
+		}
+		banner {
+			banner = {$plugin.tx_frsupersized.settings.banner.banner}
+			bannerWidth = {$plugin.tx_frsupersized.settings.banner.bannerWidth}
+			bannerHeight = {$plugin.tx_frsupersized.settings.banner.bannerHeight}
+			bannerTop = {$plugin.tx_frsupersized.settings.banner.bannerTop}
+			bannerLeft = {$plugin.tx_frsupersized.settings.banner.bannerLeft}
+		}
+	}
+	view {
+		templateRootPath = {$plugin.tx_frsupersized.view.templateRootPath}
+		partialRootPath = {$plugin.tx_frsupersized.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_frsupersized.view.layoutRootPath}
+	}
+}
+plugin.tx_frsupersized._CSS_DEFAULT_STYLE (
+)
+# Library to use for fluid math operations
+lib.math = TEXT
+lib.math {
+	current = 1
+	prioriCalc = 1
+}

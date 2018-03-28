@@ -1,0 +1,128 @@
+<!-- frsupersized -->
+<f:if condition="{settings.slideshow.slideshow} == 1">
+	<f:then>
+<link rel="stylesheet" href="{settings.general.cssSlideshowFile}" type="text/css" media="screen" />
+<link rel="stylesheet" href="{settings.general.cssThemeFile}" type="text/css" media="screen" />
+		<f:if condition="{settings.general.jQueryDisable} != 1">
+<script type="text/javascript" src="{settings.general.jQueryFile}"></script>
+<script type="text/javascript" src="{settings.general.jQueryEasingFile}"></script>
+		</f:if>
+		<f:if condition="{settings.general.supersizedJavascriptDisable} != 1">
+<script type="text/javascript" src="{settings.general.supersizedSlideshowFile}"></script>
+<script type="text/javascript" src="{settings.general.themeFile}"></script>
+		</f:if>
+	</f:then>
+	<f:else>
+<link rel="stylesheet" href="{settings.general.cssCoreFile}" type="text/css" media="screen" />
+		<f:if condition="{settings.general.jQueryDisable} != 1">
+<script type="text/javascript" src="{settings.general.jQueryFile}"></script>
+		</f:if>
+		<f:if condition="{settings.general.supersizedJavascriptDisable} != 1">
+<script type="text/javascript" src="{settings.general.supersizedCoreFile}"></script>
+		</f:if>
+	</f:else>
+</f:if>
+<f:if condition="{settings.general.setAdaptiveImagesCookie} == 1">
+<script>document.cookie='screenResolution='+Math.max(screen.width,screen.height)+'';</script>
+</f:if>
+<script type="text/javascript">/*<![CDATA[*/
+/*]]>*/
+	jQuery(function($){
+		$.supersized({
+			// Size and Position
+			min_width:			<f:if condition="{settings.fullbackground.minWidth} > 0"><f:then>{settings.fullbackground.minWidth}</f:then><f:else>800</f:else></f:if>,			// Min width allowed (in pixels)
+			min_height:			<f:if condition="{settings.fullbackground.minHeight} > 0"><f:then>{settings.fullbackground.minHeight}</f:then><f:else>600</f:else></f:if>,			// Min height allowed (in pixels)
+			vertical_center:	{settings.fullbackground.verticalCenter},			// Vertically center background
+			horizontal_center:	{settings.fullbackground.horizontalCenter},			// Horizontally center background
+			fit_always:			{settings.fullbackground.fitAlways},			// Image will never exceed browser width or height (Ignores min. dimensions)
+			fit_portrait:		{settings.fullbackground.fitPortrait},			// Portrait images will not exceed browser height
+			fit_landscape:		{settings.fullbackground.fitLandscape},			// Landscape images will not exceed browser width
+<f:if condition="{settings.slideshow.slideshow}">
+	<f:then>
+			slideshow:			1,
+			autoplay:			{settings.slideshow.autoplay},			// Slideshow starts playing automatically
+			start_slide:   		{settings.slideshow.startSlide},			// Start slide (0 is random)
+			stop_loop:			{settings.slideshow.stopLoop},			// Pauses slideshow on last slide
+			random: 			{settings.slideshow.random},			// Randomize slide order (Ignores start slide)
+			slide_interval:   	<f:if condition="{settings.slideshow.slideInterval} >= 0"><f:then>{settings.slideshow.slideInterval}</f:then><f:else>5000</f:else></f:if>,			// Length between transitions
+			transition: 		{settings.slideshow.transition}, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+			transition_speed:	<f:if condition="{settings.slideshow.transitionSpeed}"><f:then>{settings.slideshow.transitionSpeed}</f:then><f:else>1000</f:else></f:if>,		// Speed of transition
+			new_window:			{settings.slideshow.newWindow},			// Image links open in new window/tab
+			pause_hover: 		{settings.slideshow.pauseHover},			// Pause slideshow on hover
+			keyboard_nav:   	{settings.slideshow.keyboardNav},			// Keyboard navigation on/off
+			performance:		<f:if condition="{settings.slideshow.performance}"><f:then>{settings.slideshow.performance}</f:then><f:else>0</f:else></f:if>,			// 0-Normal, 1-Hybrid speed/quality, 2-Optimizes image quality, 3-Optimizes transition speed // (Only works for Firefox/IE, not Webkit)
+			image_protect:		{settings.slideshow.imageProtect},			// Disables image dragging and right click with Javascript
+
+			// Components
+			slide_links:		<f:if condition="{0:settings.slideshow.slideLinks} != {0:'false'}"><f:then>'{settings.slideshow.slideLinks}'</f:then><f:else>0</f:else></f:if>,			// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+			thumb_links:		{settings.slideshow.thumbLinks},			// Individual thumb links for each slide
+			thumbnail_navigation:	{settings.slideshow.thumbnailNavigation},			// Thumbnail navigation
+			slides:			[
+		<f:for each="{settings.general.slideValues}" as="slide" key="number">						{ image : '/uploads/tx_frsupersized/{slide.image}'<f:if condition="{slide.thumb}">, thumb : '/{slide.thumb}'</f:if><f:if condition="{slide.title}">,  title : '{slide.title}'</f:if><f:if condition="{slide.url}">,  url : '{slide.url}'</f:if> }{slide.comma}
+		</f:for>					],
+			// Theme Options
+			progress_bar:		{settings.slideshow.themeShutterProgressBar},			// Timer for each slide
+			mouse_scrub:		{settings.slideshow.themeShutterMouseScrub},			// thumbnail list navigate left or right based on the mouse location
+			// Frsupersized Options
+			control_bar: {settings.slideshow.controlBar}			// control bar (additional option for frsupersized configuration)
+	</f:then>
+	<f:else>
+			slides:			[
+							<f:if condition="1">{</f:if> image : '/uploads/tx_frsupersized/{settings.general.slideValues.0.image}' <f:if condition="1">}</f:if>
+						]
+	</f:else>
+</f:if>
+		});
+	});
+</script>
+<f:if condition="{0: {settings.slideshow.thumbLinks}, 1: {settings.slideshow.controlBar}, 2: {settings.slideshow.banner.banner}} == {0: 1, 1: 1, 2: 1}">
+<style type="text/css"></f:if><f:if condition="{settings.banner.banner}">
+	<f:then>
+	#supersized {
+		<f:if condition="{settings.banner.bannerWidth}"><f:then>width: {settings.banner.bannerWidth}px;</f:then><f:else>width:100%;</f:else></f:if>
+		<f:if condition="{settings.banner.bannerHeight}"><f:then>height: {settings.banner.bannerHeight}px;</f:then><f:else>height:100%;</f:else></f:if>
+		<f:if condition="{settings.banner.bannerTop}"><f:then>top: {settings.banner.bannerTop}px;</f:then><f:else></f:else></f:if>
+		<f:if condition="{settings.banner.bannerLeft}"><f:then>left: {settings.banner.bannerLeft}px;</f:then><f:else></f:else></f:if>
+	}
+	#supersized li {
+		<f:if condition="{settings.banner.bannerWidth}"><f:then>width: {settings.banner.bannerWidth}px;</f:then><f:else>width:100%;</f:else></f:if>
+		<f:if condition="{settings.banner.bannerHeight}"><f:then>height: {settings.banner.bannerHeight}px;</f:then><f:else>height:100%;</f:else></f:if>
+		<f:if condition="{settings.banner.bannerTop}"><f:then>top: {settings.banner.bannerTop}px;</f:then><f:else></f:else></f:if>
+		<f:if condition="{settings.banner.bannerLeft}"><f:then>left: {settings.banner.bannerLeft}px;</f:then><f:else></f:else></f:if>
+	}
+	#supersized a {
+		<f:if condition="{settings.banner.bannerWidth}"><f:then>width: {settings.banner.bannerWidth}px;</f:then><f:else>width:100%;</f:else></f:if>
+		<f:if condition="{settings.banner.bannerHeight}"><f:then>height: {settings.banner.bannerHeight}px;</f:then><f:else>height:100%;</f:else></f:if>
+		<f:if condition="{settings.banner.bannerTop}"><f:then>top: {settings.banner.bannerTop}px;</f:then><f:else></f:else></f:if>
+		<f:if condition="{settings.banner.bannerLeft}"><f:then>left: {settings.banner.bannerLeft}px;</f:then><f:else></f:else></f:if>
+	}
+	</f:then>
+</f:if><f:if condition="{settings.slideshow.thumbLinks}">
+	<f:then>
+	ul#thumb-list li {
+		width: {settings.slideshow.thumbWidth}px;
+		height: {settings.slideshow.thumbHeight}px;
+	}
+	ul#thumb-list li img {
+		width: {settings.slideshow.thumbWidth}px;
+		height: {settings.slideshow.thumbHeight}px;
+	}
+		<f:if condition="{settings.slideshow.controlBar} != 1">
+			<f:then>
+	#thumb-tray {
+		bottom: 0;
+		height: {settings.slideshow.thumbHeight}px;
+	}
+			</f:then>
+			<f:else>
+	#thumb-tray {
+		height: <f:cObject typoscriptObjectPath="lib.math" data="({settings.slideshow.thumbHeight}+42)" />px;
+	}
+			</f:else>
+		</f:if>
+	</f:then>
+</f:if><f:if condition="{0: {settings.slideshow.thumbLinks}, 1: {settings.slideshow.controlBar}, 2: {settings.slideshow.banner.banner}} == {0: 1, 1: 1, 2: 1}">
+</style>
+</f:if>
+
+

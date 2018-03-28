@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2012-09-22T21:38:35Z" product-name="frsupersized">
+		<header/>
+		<body>
+			<trans-unit id="constants.subcategory.settings_general" xml:space="preserve">
+				<source>Settings General</source>
+			</trans-unit>
+			<trans-unit id="constants.subcategory.settings_fullbackground" xml:space="preserve">
+				<source>Settings Full background</source>
+			</trans-unit>
+			<trans-unit id="constants.subcategory.settings_slideshow" xml:space="preserve">
+				<source>Settings Slideshow</source>
+			</trans-unit>
+			<trans-unit id="constants.subcategory.settings_banner" xml:space="preserve">
+				<source>Settings Banner</source>
+			</trans-unit>
+			<trans-unit id="constants.subcategory.view" xml:space="preserve">
+				<source>Pathes to Templates</source>
+			</trans-unit>
+			<trans-unit id="constants.subcategory.view.templateRootPath" xml:space="preserve">
+				<source>Path to template root </source>
+			</trans-unit>
+			<trans-unit id="constants.subcategory.view.partialRootPath" xml:space="preserve">
+				<source>Path to partial templates</source>
+			</trans-unit>
+			<trans-unit id="constants.subcategory.view.layoutRootPath" xml:space="preserve">
+				<source>Path to layout templates</source>
+			</trans-unit>
+			<trans-unit id="pi1_title" xml:space="preserve">
+				<source>Frsupersized</source>
+			</trans-unit>
+			<trans-unit id="pi1_plus_wiz_description" xml:space="preserve">
+				<source>Frsupersized implements the Supersized jQuery Plugin - a full screen background slideshow</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.from_ts" xml:space="preserve">
+				<source>From Typoscript</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.yes" xml:space="preserve">
+				<source>Yes</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.no" xml:space="preserve">
+				<source>No</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.general" xml:space="preserve">
+				<source>General</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.fullbackground" xml:space="preserve">
+				<source>Full Background</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.banner" xml:space="preserve">
+				<source>Banner</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.slideshow" xml:space="preserve">
+				<source>Slideshow</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.general.switchControllerAction" xml:space="preserve">
+				<source>Show:</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.general.slides" xml:space="preserve">
+				<source>Image file(s) for full background, slideshow or banner</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.general.slideCaptions" xml:space="preserve">
+				<source>Slide captions</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.general.slideUrl" xml:space="preserve">
+				<source>Link images to following URL (slideshow only)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.general.cssCoreFile" xml:space="preserve">
+				<source>CSS core file for full background (optional)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.general.cssSlideshowFile" xml:space="preserve">
+				<source>CSS file for slideshow (optional)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.general.cssBannerFile" xml:space="preserve">
+				<source>CSS file for banner (optional)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.general.cssThemeFile" xml:space="preserve">
+				<source>CSS theme file for slideshow (optional)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.general.jQueryDisable" xml:space="preserve">
+				<source>Disable including of JQuery files (you have to include them externally)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.general.jQueryFile" xml:space="preserve">
+				<source>JQuery file (optional)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.general.jQueryEasingFile" xml:space="preserve">
+				<source>JQuery easing file (optional)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.general.supersizedJavascriptDisable" xml:space="preserve">
+				<source>Disable including of Supersized javascript files (you have to include them externally)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.general.supersizedCoreFile" xml:space="preserve">
+				<source>Javascript file for full background(optional)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.general.supersizedSlideshowFile" xml:space="preserve">
+				<source>Javascript file for slideshow (optional)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.general.themeFile" xml:space="preserve">
+				<source>Javascript theme file for slideshow (optional)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.fullbackground.minWidth" xml:space="preserve">
+				<source>Min-Width of slides (in pixels)(min_width)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.fullbackground.minHeight" xml:space="preserve">
+				<source>Min-Height of slides (in pixels)(min_height)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.fullbackground.verticalCenter" xml:space="preserve">
+				<source>Center images vertically. (vertical_center)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.fullbackground.horizontalCenter" xml:space="preserve">
+				<source>Center images horizontally. (horizontal_center)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.fullbackground.fitAlways" xml:space="preserve">
+				<source>Image will never exceed browser width or height (Ignores min. dimensions) (fit_always)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.fullbackground.fitPortrait" xml:space="preserve">
+				<source>Portrait images will not exceed browser height (fit_portrait)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.fullbackground.fitLandscape" xml:space="preserve">
+				<source>Landscape images will not exceed browser width (fit_landscape)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.slideshow.slideshow" xml:space="preserve">
+				<source>Activate slideshow (slideshow)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.slideshow.autoplay" xml:space="preserve">
+				<source>Start Slideshow directly (autoplay)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.slideshow.slideInterval" xml:space="preserve">
+				<source>Time between slide changes in milliseconds. The default is 5 seconds.(slide_interval, default: 5000)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.slideshow.startSlide" xml:space="preserve">
+				<source>Start slide (0 is random) (start_slide)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.slideshow.stopLoop" xml:space="preserve">
+				<source>Pauses slideshow on last slide (stop_loop)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.slideshow.random" xml:space="preserve">
+				<source>Randomize slide order (Ignores start slide - random)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.slideshow.transition" xml:space="preserve">
+				<source>Transition Mode (transition)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.slideshow.transition.none" xml:space="preserve">
+				<source>No transition effect (none)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.slideshow.transition.fade" xml:space="preserve">
+				<source>Fade effect (Default)(fade)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.slideshow.transition.slideTop" xml:space="preserve">
+				<source>Slide in from top (slideTop)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.slideshow.transition.slideRight" xml:space="preserve">
+				<source>Slide in from right (slideRight)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.slideshow.transition.slideBottom" xml:space="preserve">
+				<source>Slide in from bottom (slideBottom)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.slideshow.transition.slideLeft" xml:space="preserve">
+				<source>Slide in from left(slideLeft)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.slideshow.transition.carouselRight" xml:space="preserve">
+				<source>Carousel from right to left (carouselRight)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.slideshow.transition.carouselLeft" xml:space="preserve">
+				<source>Carousel from left to right (carouselLeft)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.slideshow.transitionSpeed" xml:space="preserve">
+				<source>Speed of transition in milliseconds (transition_speed)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.slideshow.newWindow" xml:space="preserve">
+				<source>Image links open in new window/tab (new_window)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.slideshow.keyboardNav" xml:space="preserve">
+				<source>Activate keyboard navigation (keyboard_nav)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.slideshow.performance" xml:space="preserve">
+				<source>Performance: 0-Normal, 1-Hybrid speed/quality, 2-Optimizes image quality, 3-Optimizes transition speed (Only works for Firefox/IE, not Webkit) (performance)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.slideshow.performance.0" xml:space="preserve">
+				<source>0-Normal</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.slideshow.performance.1" xml:space="preserve">
+				<source>1-Hybrid speed/quality</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.slideshow.performance.2" xml:space="preserve">
+				<source>2-Optimizes image quality</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.slideshow.performance.3" xml:space="preserve">
+				<source>3-Optimizes transition speed</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.slideshow.imageProtect" xml:space="preserve">
+				<source>Disables image dragging and right click with Javascript (image_protect)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.slideshow.slideLinks" xml:space="preserve">
+				<source>Individual links for each slide (Options: false, 'num', 'name', 'blank') (slide_links)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.slideshow.slideLinks.false" xml:space="preserve">
+				<source> Disable slide links (false)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.slideshow.slideLinks.number" xml:space="preserve">
+				<source>Numbers (num)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.slideshow.slideLinks.name" xml:space="preserve">
+				<source>Title of slide (name)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.slideshow.slideLinks.blank" xml:space="preserve">
+				<source> Links are empty. Allows for background sprites. (blank)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.slideshow.pauseHover" xml:space="preserve">
+				<source>Pauses slideshow while current image hovered over. (pause_hover)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.slideshow.thumbLinks" xml:space="preserve">
+				<source>Individual thumb links for each slide (thumb_links)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.slideshow.thumbWidth" xml:space="preserve">
+				<source>Thumb width</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.slideshow.thumbWidthCrop" xml:space="preserve">
+				<source>Activate horzontal cropping of thumb</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.slideshow.thumbHeight" xml:space="preserve">
+				<source>Thumb height</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.slideshow.thumbHeightCrop" xml:space="preserve">
+				<source>Activate vertikal cropping of thumb</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.slideshow.thumbnailNavigation" xml:space="preserve">
+				<source>Thumbnail navigation - previous and next thumbs(thumbnail_navigation)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.slideshow.controlBar" xml:space="preserve">
+				<source>Activate control bar</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.slideshow.navigation" xml:space="preserve">
+				<source>Arrow navigation (navigation)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.slideshow.navigationImagePath" xml:space="preserve">
+				<source>Folder of image files for navigation (optional)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.slideshow.slideCounter" xml:space="preserve">
+				<source>Enable the slide counter (slide_counter)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.slideshow.slideCaptions" xml:space="preserve">
+				<source>Enable slide captions (slide_captions)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.slideshow.themeShutterProgressBar" xml:space="preserve">
+				<source>Theme shutter option: Progress bar that runs based on the the slide interval. (progress_bar)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.slideshow.themeShutterMouseScrub" xml:space="preserve">
+				<source>Theme shutter option: Makes the thumbnail list navigate left or right based on the mouse location. (mouse_scrub)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.banner.banner" xml:space="preserve">
+				<source>Activate banner</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.banner.bannerWidth" xml:space="preserve">
+				<source>Banner width</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.banner.bannerHeight" xml:space="preserve">
+				<source>Banner height</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.banner.bannerTop" xml:space="preserve">
+				<source>Distance of the banner from the top of the window in pixels (top, numeric)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field.settings.banner.bannerLeft" xml:space="preserve">
+				<source>Distance of the banner from the left edge of the window (left, numeric)</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

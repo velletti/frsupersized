@@ -1,0 +1,6 @@
+﻿.. |img-11|     image:: ../../Images/manual_html_m71cc105e.jpg
+.. :align: left
+.. :border: 0
+.. :height: 18%
+.. :name: Grafik8
+.. :width: 60%

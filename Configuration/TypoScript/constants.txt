@@ -1,0 +1,124 @@
+## Define custom categories
+# customsubcategory=1_settings_general=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:constants.subcategory.settings_general
+# customsubcategory=2_settings_fullbackground=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:constants.subcategory.settings_fullbackground
+# customsubcategory=3_settings_slideshow=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:constants.subcategory.settings_slideshow
+# customsubcategory=4_settings_banner=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:constants.subcategory.settings_banner
+# customsubcategory=view=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:constants.subcategory.view
+
+plugin.tx_frsupersized {
+	settings {
+		general {
+			 # cat=plugin.tx_frsupersized/1_settings_general/01; type=string; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.general.cssCoreFile
+			cssCoreFile = EXT:frsupersized/Resources/Public/Scripts/supersized/supersized-3.2.7/core/css/supersized.core.css
+			 # cat=plugin.tx_frsupersized/1_settings_general/02; type=string; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.general.cssSlideshowFile
+			cssSlideshowFile = EXT:frsupersized/Resources/Public/Scripts/supersized/supersized-3.2.7/slideshow/css/supersized.css
+			 # cat=plugin.tx_frsupersized/1_settings_general/03; type=string; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.general.cssThemeFile
+			cssThemeFile = EXT:frsupersized/Resources/Public/Scripts/supersized/supersized-3.2.7/slideshow/theme/supersized.shutter.css
+			 # cat=plugin.tx_frsupersized/1_settings_general/04; type=boolean; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.general.jQueryDisable
+			jQueryDisable = 0
+			 # cat=plugin.tx_frsupersized/1_settings_general/05; type=string; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.general.jQueryFile
+			jQueryFile = EXT:frsupersized/Resources/Public/Scripts/jquery/1.7.2/jquery-1.7.2.min.js
+			 # cat=plugin.tx_frsupersized/1_settings_general/06; type=string; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.general.jQueryEasingFile
+			jQueryEasingFile = EXT:frsupersized/Resources/Public/Scripts/supersized/supersized-3.2.7/slideshow/js/jquery.easing.min.js
+			 # cat=plugin.tx_frsupersized/1_settings_general/07; type=string; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.general.supersizedCoreFile
+			supersizedCoreFile = EXT:frsupersized/Resources/Public/Scripts/supersized/supersized-3.2.7/core/js/supersized.core.3.2.1.min.js
+			 # cat=plugin.tx_frsupersized/1_settings_general/08; type=string; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.general.supersizedSlideshowFile
+			supersizedSlideshowFile = EXT:frsupersized/Resources/Public/Scripts/supersized/supersized-3.2.7/slideshow/js/supersized.3.2.7.min.js
+			 # cat=plugin.tx_frsupersized/1_settings_general/09; type=string; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.general.themeFile
+			themeFile = EXT:frsupersized/Resources/Public/Scripts/supersized/supersized-3.2.7/slideshow/theme/supersized.shutter.changed.min.js
+		}
+		fullbackground {
+			# cat=plugin.tx_frsupersized/2_settings_fullbackground/01; type=int+; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.fullbackground.minWidth
+			minWidth = 0
+			# cat=plugin.tx_frsupersized/2_settings_fullbackground/02; type=int+; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.fullbackground.minHeight
+			minHeight = 0
+			# cat=plugin.tx_frsupersized/2_settings_fullbackground/03; type=boolean; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.fullbackground.verticalCenter
+			verticalCenter = 0
+			# cat=plugin.tx_frsupersized/2_settings_fullbackground/04; type=boolean; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.fullbackground.horizontalCenter
+			horizontalCenter = 0
+			# cat=plugin.tx_frsupersized/2_settings_fullbackground/05; type=boolean; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.fullbackground.fitAlways
+			fitAlways = 0
+			# cat=plugin.tx_frsupersized/2_settings_fullbackground/06; type=boolean; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.fullbackground.fitPortrait
+			fitPortrait = 0
+			# cat=plugin.tx_frsupersized/2_settings_fullbackground/07; type=boolean; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.fullbackground.fitLandscape
+			fitLandscape = 0
+		}
+		slideshow {
+			# cat=plugin.tx_frsupersized/3_settings_slideshow/01; type=boolean; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.slideshow.slideshow
+			slideshow = 0
+			# cat=plugin.tx_frsupersized/3_settings_slideshow/02; type=boolean; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.slideshow.autoplay
+			autoplay = 0
+			# cat=plugin.tx_frsupersized/3_settings_slideshow/03; type=int+; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.slideshow.slideInterval
+			slideInterval = 5000
+			# cat=plugin.tx_frsupersized/3_settings_slideshow/04; type=int+; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.slideshow.startSlide
+			startSlide = 1
+			# cat=plugin.tx_frsupersized/3_settings_slideshow/05; type=boolean; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.slideshow.stopLoop
+			stopLoop = 0
+			# cat=plugin.tx_frsupersized/3_settings_slideshow/06; type=boolean; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.slideshow.random
+			random = 0
+			# cat=plugin.tx_frsupersized/3_settings_slideshow/07; type=int+; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.slideshow.transition
+			transition = 1
+			# cat=plugin.tx_frsupersized/3_settings_slideshow/08; type=int+; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.slideshow.transitionSpeed
+			transitionSpeed = 1000
+			# cat=plugin.tx_frsupersized/3_settings_slideshow/09; type=boolean; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.slideshow.newWindow
+			newWindow = 0
+			# cat=plugin.tx_frsupersized/3_settings_slideshow/10; type=boolean; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.slideshow.keyboardNav
+			keyboardNav = 1
+			# cat=plugin.tx_frsupersized/3_settings_slideshow/11; type=int+; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.slideshow.performance
+			performance = 1
+			# cat=plugin.tx_frsupersized/3_settings_slideshow/12; type=boolean; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.slideshow.imageProtect
+			imageProtect = 0
+			# cat=plugin.tx_frsupersized/3_settings_slideshow/13; type=string; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.slideshow.slideLinks
+			slideLinks = blank
+			# cat=plugin.tx_frsupersized/3_settings_slideshow/14; type=boolean; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.slideshow.pauseHover
+			pauseHover = 0
+			# cat=plugin.tx_frsupersized/3_settings_slideshow/15; type=boolean; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.slideshow.thumbLinks
+			thumbLinks = 0
+			# cat=plugin.tx_frsupersized/3_settings_slideshow/16; type=int+; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.slideshow.thumbWidth
+			thumbWidth = 150
+			# cat=plugin.tx_frsupersized/3_settings_slideshow/17; type=boolean; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.slideshow.thumbWidthCrop
+			thumbWidthCrop = 0
+			# cat=plugin.tx_frsupersized/3_settings_slideshow/18; type=int+; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.slideshow.thumbHeight
+			thumbHeight = 108
+			# cat=plugin.tx_frsupersized/3_settings_slideshow/19; type=boolean; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.slideshow.thumbHeightCrop
+			thumbHeightCrop = 0
+			# cat=plugin.tx_frsupersized/3_settings_slideshow/20; type=boolean; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.slideshow.thumbnailNavigation
+			thumbnailNavigation = 0
+			# cat=plugin.tx_frsupersized/3_settings_slideshow/21; type=boolean; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.slideshow.navigation
+			navigation = 0
+			# cat=plugin.tx_frsupersized/3_settings_slideshow/22; type=string; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.slideshow.navigationImagePath
+			navigationImagePath = EXT:frsupersized/Resources/Public/Scripts/supersized/supersized-3.2.7/slideshow/img/
+			# cat=plugin.tx_frsupersized/3_settings_slideshow/23; type=boolean; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.slideshow.controlBar
+			controlBar = 0
+			# cat=plugin.tx_frsupersized/3_settings_slideshow/24; type=boolean; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.slideshow.slideCounter
+			slideCounter = 0
+			# cat=plugin.tx_frsupersized/3_settings_slideshow/25; type=boolean; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.slideshow.slideCaptions
+			slideCaptions = 0
+			# cat=plugin.tx_frsupersized/3_settings_slideshow/26; type=boolean; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.slideshow.themeShutterProgressBar
+			themeShutterProgressBar	 = 0
+			# cat=plugin.tx_frsupersized/3_settings_slideshow/27; type=boolean; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.slideshow.themeShutterMouseScrub
+			themeShutterMouseScrub	 = 0
+		}
+		banner {
+			# cat=plugin.tx_frsupersized/4_settings_banner/01; type=boolean; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.banner.banner
+			banner = 0
+			# cat=plugin.tx_frsupersized/4_settings_banner/02; type=int+; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.banner.bannerWidth
+			bannerWidth =
+			# cat=plugin.tx_frsupersized/4_settings_banner/03; type=int+; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.banner.bannerHeight
+			bannerHeight =
+			# cat=plugin.tx_frsupersized/4_settings_banner/04; type=int+; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.banner.bannerTop
+			bannerTop =
+			# cat=plugin.tx_frsupersized/4_settings_banner/05; type=int+; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.banner.bannerLeft
+			bannerLeft =
+
+		}
+	}
+	view {
+		# cat=plugin.tx_frsupersized/view/01; type=string; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:constants.subcategory.view.templateRootPath
+		templateRootPath = EXT:frsupersized/Resources/Private/Templates/
+		# cat=plugin.tx_frsupersized/view/02; type=string; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:constants.subcategory.view.partialRootPath
+		partialRootPath = EXT:frsupersized/Resources/Private/Partials/
+		# cat=plugin.tx_frsupersized/view/03; type=string; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:constants.subcategory.view.layoutRootPath
+		layoutRootPath = EXT:frsupersized/Resources/Private/Layouts/
+	}
+}
