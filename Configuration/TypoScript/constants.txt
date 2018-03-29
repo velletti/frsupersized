@@ -17,7 +17,7 @@ plugin.tx_frsupersized {
 			 # cat=plugin.tx_frsupersized/1_settings_general/04; type=boolean; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.general.jQueryDisable
 			jQueryDisable = 0
 			 # cat=plugin.tx_frsupersized/1_settings_general/05; type=string; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.general.jQueryFile
-			jQueryFile = EXT:frsupersized/Resources/Public/Scripts/jquery/1.7.2/jquery-1.7.2.min.js
+			jQueryFile = EXT:frsupersized/Resources/Public/Scripts/jquery/3.3.1/jquery-3.3.1.min.js
 			 # cat=plugin.tx_frsupersized/1_settings_general/06; type=string; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.general.jQueryEasingFile
 			jQueryEasingFile = EXT:frsupersized/Resources/Public/Scripts/supersized/supersized-3.2.7/slideshow/js/jquery.easing.min.js
 			 # cat=plugin.tx_frsupersized/1_settings_general/07; type=string; label=LLL:EXT:frsupersized/Resources/Private/Language/locallang.xlf:tt_content.pi_flexform.field.settings.general.supersizedCoreFile
