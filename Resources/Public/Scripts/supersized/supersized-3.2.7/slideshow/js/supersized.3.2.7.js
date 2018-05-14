@@ -202,7 +202,7 @@
 		/* Launch Supersized
 		----------------------------*/
 		base.launch = function(){
-		
+
 			base.$el.css('visibility','visible');
 			$('#supersized-loader').remove();		//Hide loading animation
 			
@@ -292,7 +292,6 @@
 				$('.load-item img').bind("contextmenu mousedown",function(){
 					return false;
 				});
-								
 			}
 			
 			// Adjust image when browser is resized
@@ -434,8 +433,22 @@
 					
 					// Vertically Center
 					if (base.options.vertical_center){
-						$(this).css('top', (browserheight - $(this).height())/2);
-					}
+                        if( $('body').hasClass('xs') && browserwidth < browserheight ) {
+                            thisSlide.parents('li').css('top', base.options.top_margin + "px");
+                            $('#prevslide').css('top' , ( base.options.top_margin + ($(this).height() /2 )) + "px" ) ;
+                            $('#nextslide').css('top' , ( base.options.top_margin + ($(this).height() /2 )) + "px" ) ;
+                        } else {
+                            thisSlide.parents('li').css('top', (browserheight - $(this).height())/2);
+                            $('#prevslide').css('top' , '50%') ;
+                            $('#nextslide').css('top' , '50%') ;
+                        }
+					} else {
+                        if( $('body').hasClass('xs') && browserwidth < browserheight ) {
+                            thisSlide.parents('li').css('top', base.options.top_margin + "px");
+                            $('#prevslide').css('top' , ( base.options.top_margin + ($(this).height() /2 )) + "px" ) ;
+                            $('#nextslide').css('top' , ( base.options.top_margin + ($(this).height() /2 )) + "px" ) ;
+                        }
+                    }
 					
 				});
 				
@@ -860,6 +873,7 @@
 		
         // Make it go!
         base.init();
+        base.resizeNow();
 	};
 	
 	
@@ -911,7 +925,7 @@
 		min_height		        :   0,			// Min height allowed (in pixels)
 		horizontal_center       :   1,			// Horizontally center background
 		vertical_center         :   1,			// Vertically center background
-		
+        top_margin				:   130,        // Top Margin on smartphone in Portrait Mode
 												   
 		// Components							
 		slide_links				:	1,			// Individual links for each slide (Options: false, 'num', 'name', 'blank')

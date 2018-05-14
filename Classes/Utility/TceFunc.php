@@ -24,6 +24,7 @@ namespace FFREWER\Frsupersized\Utility;
  ***************************************************************/
  
 use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Backend\Form\NodeFactory;
 
 /**
  * 'TceFunc' for the 'frsupersized' extension.
@@ -87,7 +88,7 @@ class TceFunc {
 				// We have to transform it
 				$formData['parameterArray']['itemFormElValue'] = [];
 				$formData['parameterArray']['itemFormElValue'][0] = $params['itemFormElValue'];
-				$formData['renderType'] = 'select';
+				$formData['renderType'] = 'selectSingle';
 				$formData['inlineStructure'] = [];
 				$formResult = $nodeFactory->create($formData)->render();
 			} else {
