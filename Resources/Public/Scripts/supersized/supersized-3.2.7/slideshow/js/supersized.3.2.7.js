@@ -432,6 +432,11 @@
 					}
 					
 					// Vertically Center
+                    // Vertically Center
+                    if (base.options.vertical_center){
+                        $(this).css('top', (browserheight - $(this).height())/2);
+                    }
+                    /*
 					if (base.options.vertical_center){
                         if( $('body').hasClass('xs') && browserwidth < browserheight ) {
                             thisSlide.parents('li').css('top', base.options.top_margin + "px");
@@ -449,6 +454,7 @@
                             $('#nextslide').css('top' , ( base.options.top_margin + ($(this).height() /2 )) + "px" ) ;
                         }
                     }
+                    */
 					
 				});
 				
