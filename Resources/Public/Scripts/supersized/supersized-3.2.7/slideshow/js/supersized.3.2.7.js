@@ -14,8 +14,10 @@
 
 	/* Place Supersized Elements
 	----------------------------*/
+	//var eleId= 'body' ;
+	var eleId= '#headerContent' ;
 	$(document).ready(function() {
-		$('body').append('<div id="supersized-loader"></div><ul id="supersized"></ul>');
+		$(eleId).append('<div id="supersized-loader"></div><ul id="supersized"></ul>');
 	});
     
     
@@ -32,13 +34,16 @@
         // Add a reverse reference to the DOM object
         base.$el.data("supersized", base);
         api = base.$el.data('supersized');
+
+
+
 		
 		base.init = function(){
         	// Combine options and vars
         	$.supersized.vars = $.extend($.supersized.vars, $.supersized.themeVars);
         	$.supersized.vars.options = $.extend({},$.supersized.defaultOptions, $.supersized.themeOptions, options);
             base.options = $.supersized.vars.options;
-            
+            base.options.top_margin = $("#top").height() + $('#navbar-main').height() + 10 ;
             base._build();
         };
         
@@ -392,6 +397,7 @@
 								thisSlide.height(browserwidth * ratio);
 							}
 						}
+                        $(eleId).css( "min-height" ,  $(this).height() ) ;
 					};
 					
 					function resizeHeight(minimum){
@@ -418,6 +424,7 @@
 								thisSlide.width(browserheight / ratio);
 							}
 						}
+                        $(eleId).css( "min-height" ,  $(this).height() ) ;
 					};
 					
 					/*-----End Resize Functions-----*/
@@ -436,6 +443,15 @@
                     if (base.options.vertical_center){
                         $(this).css('top', (browserheight - $(this).height())/2);
                     }
+					// todo Add this as Option
+
+                    $(this).css('top',  base.options.top_margin + "px");
+                    $('#prevslide').css('top' , ( base.options.top_margin + ($(this).height() /2 )) + "px" ) ;
+                    $('#nextslide').css('top' , ( base.options.top_margin + ($(this).height() /2 )) + "px" ) ;
+
+
+                    $(eleId).css( "min-height" ,  $(this).height() ) ;
+
                     /*
 					if (base.options.vertical_center){
                         if( $('body').hasClass('xs') && browserwidth < browserheight ) {
@@ -931,7 +947,7 @@
 		min_height		        :   0,			// Min height allowed (in pixels)
 		horizontal_center       :   1,			// Horizontally center background
 		vertical_center         :   1,			// Vertically center background
-        top_margin				:   130,        // Top Margin on smartphone in Portrait Mode
+        top_margin				:   0 ,        // Top Margin on smartphone in Portrait Mode
 												   
 		// Components							
 		slide_links				:	1,			// Individual links for each slide (Options: false, 'num', 'name', 'blank')
